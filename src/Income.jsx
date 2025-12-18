@@ -17,14 +17,14 @@ export default function Income() {
   }, []);
 
   const fetchSummary = async () => {
-  const res = await fetch("http://127.0.0.1:8000/api/income/");
+  const res = await fetch("https://freemanage.onrender.com/api/income/");
   const data = await res.json();
   setSummary(data);
   setPayments(data.payments || []);
   };
 
   const fetchPayments = async () => {
-  const res = await fetch("http://127.0.0.1:8000/api/income/");
+  const res = await fetch("https://freemanage.onrender.com/api/income/");
   const data = await res.json();
   setPayments(data.payments || []);
   };

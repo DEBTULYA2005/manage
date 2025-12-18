@@ -22,7 +22,7 @@ export default function StudentInfo() {
   // 🔹 Fetch students
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/api/students/")
+      .get("https://freemanage.onrender.com/api/students/")
       .then((res) => {
         setStudents(res.data);
         setLoading(false);
@@ -38,7 +38,7 @@ export default function StudentInfo() {
   // 🔹 Save student
   const handleSave = () => {
     axios
-      .post("http://127.0.0.1:8000/api/students/", formData)
+      .post("https://freemanage.onrender.com/api/students/", formData)
       .then((res) => {
         setStudents([...students, res.data]);
         setShowModal(false);
