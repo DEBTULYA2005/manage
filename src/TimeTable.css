@@ -1,0 +1,25 @@
+/* TimeTable.css */
+.timetable { padding: 20px; font-family: Arial; }
+.back-btn { padding: 6px 12px; margin-bottom: 10px; }
+.table { 
+    display: grid; 
+    grid-template-columns: repeat(7, 1fr); 
+    
+    row-gap: 50px;
+    text-align: center;
+}
+.day { font-weight: bold; }
+.slot { min-height: 60px; }
+.day,
+.slot {
+  background-color: #a889ff;   /* light grey / blue */
+  padding: 12px 0;
+  border-radius: 8px;
+  color: rgb(0, 60, 255);           /* soft corners */
+}
+h3{
+    padding-top: 55px;
+}
+h1{
+    color: rgb(34, 86, 255);
+}

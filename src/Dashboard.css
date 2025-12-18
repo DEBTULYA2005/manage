@@ -1,0 +1,137 @@
+.dashboard {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar layout */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: white;
+}
+
+/* Left item (Dashboard) */
+.logo {
+  cursor: pointer;
+}
+
+/* Center items */
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 70px;
+}
+
+/* Navbar links */
+.navbar a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+/* Active link */
+.navbar a.active {
+  color: rgb(54, 0, 126);
+}
+
+.navbar a:hover{
+
+  background: linear-gradient(
+    90deg,
+    #ff0000,
+    #0055ff,
+    #00ff00
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Banner */
+.banner {
+  height: 180px;
+  margin: 20px 0;
+  border-radius: 16px;
+  background: linear-gradient(
+    90deg,
+    #f88686,
+    #84acfd,
+    #8fff8f
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Typing effect */
+.typing-text {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid white;
+  width: 0;
+  animation: typing 4s steps(30, end) forwards,
+             blink 0.8s infinite;
+}
+
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 18ch;
+  }
+}
+
+/* Cursor blink */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+/* About section */
+.about h2 {
+  margin-bottom: 5px;
+}
+
+p{
+  font-family:'Times New Roman', Times, serif;
+  font-size: large;
+}
+
+img{
+  height: 62vh;
+  width: 52vw;
+  max-width: 620px;
+  max-height: 620px;
+  border-radius: 10px;
+  border: none;
+}
+
+.frontend{
+  display: flex;
+  gap: 5%;
+  justify-content: space-evenly;
+  line-height: 2.0;
+  text-align: justify;
+}
+
+.backend{
+  display: flex;
+  gap: 5%;
+  justify-content: space-evenly;
+  line-height: 2.0;
+  text-align: justify;
+}

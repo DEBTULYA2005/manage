@@ -1,0 +1,50 @@
+.footer {
+  margin-top: 40px;
+  padding: 30px 20px;
+  background: linear-gradient(
+    90deg,
+    #baf1da,
+    #eeceb8,
+    #f0b8e7
+  );
+  color: #000;
+  border-radius: 20px 20px 0 0;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.footer-content h3 {
+  margin-bottom: 10px;
+  font-size: 32px;
+  padding-top: 0;
+}
+
+.footer-content p {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.footer-links span {
+  cursor: pointer;
+}
+
+.footer-links span:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  font-size: 13px;
+  opacity: 0.8;
+}
