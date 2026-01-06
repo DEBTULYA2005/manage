@@ -23,7 +23,7 @@ export default function Income() {
       throw new Error("HTTP error " + res.status);
     }
     const data = await res.json();
-    console.log("SUMMARY DATA:", data); // 🔍 DEBUG
+    // console.log("SUMMARY DATA:", data); // 🔍 DEBUG
     setSummary(data);
     setPayments(data.payments || []);
   } catch (err) {
