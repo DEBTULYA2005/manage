@@ -26,17 +26,20 @@ export default function Income() {
     // console.log("SUMMARY DATA:", data); // 🔍 DEBUG
     setSummary(data);
     setPayments(data.payments || []);
-  } catch (err) {
-    console.error("FETCH ERROR:", err);
+  } catch (arr) {
+    console.error("Fetch Error: ", arr);
   }
 };
 
-
-  const fetchPayments = async () => {
-  const res = await fetch("https://freemanage.onrender.com/api/income/");
-  const data = await res.json();
-  setPayments(data.payments || []);
-  };
+  try {
+    const fetchPayments = async () => {
+    const res = await fetch("https://freemanage.onrender.com/api/income/");
+    const data = await res.json();
+    setPayments(data.payments || []);
+    };
+  } catch (arr){
+    console.error("Fetch Error: ", arr);
+  }
 
   return (
     <div className="income-page">
