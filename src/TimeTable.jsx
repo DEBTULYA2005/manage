@@ -2,6 +2,7 @@ import "./TimeTable.css";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Loading from "./loading";
 
 export default function TimeTable() {
   const navigate = useNavigate();
@@ -41,7 +42,7 @@ export default function TimeTable() {
         <h1>Time Table</h1>
 
         {loading ? (
-          <p>Loading...</p>
+          <Loading />
         ) : (
           <div className="table">
             {groupedTimetable.map((dayItem, index) => (
