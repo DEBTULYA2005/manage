@@ -13,6 +13,8 @@ export default function Income() {
   const [showAdd, setShowAdd] = useState(false);
   const [showCalc, setShowCalc] = useState(false);
 
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     fetchSummary();
     fetchPayments();
@@ -88,7 +90,7 @@ export default function Income() {
         ) : (
           <tr>
             <td colSpan="3" style={{ textAlign: "center" }}>
-              No payments found
+              {loading ? "Looking for transactions" : "No data found"}
             </td>
           </tr>
         )}
