@@ -4,6 +4,7 @@ import "./Income.css";
 import AddPaymentModal from "./AddPaymentModal";
 import CalculationModal from "./CalculationModal";
 
+
 export default function Income() {
   const navigate = useNavigate();
 
@@ -14,6 +15,7 @@ export default function Income() {
 
   useEffect(() => {
     fetchSummary();
+    fetchPayments();
   }, []);
 
   const fetchSummary = async () => {
@@ -31,15 +33,20 @@ export default function Income() {
   }
 };
 
+  const fetchPayments = async () => {
   try {
-    const fetchPayments = async () => {
     const res = await fetch("https://freemanage.onrender.com/api/income/");
+    if (!res.ok) {
+      throw new Error("HTTP error " + res.status);
+    }
     const data = await res.json();
     setPayments(data.payments || []);
-    };
-  } catch (arr){
-    console.error("Fetch Error: ", arr);
+    setSummary(data); // optional but recommended
+  } catch (err) {
+    console.error("Fetch Error: ", err);
   }
+};
+
 
   return (
     <div className="income-page">
