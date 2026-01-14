@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./Income.css";
 import AddPaymentModal from "./AddPaymentModal";
 import CalculationModal from "./CalculationModal";
+import Loading from "./loading";
 
 
 export default function Income() {
@@ -90,7 +91,7 @@ export default function Income() {
         ) : (
           <tr>
             <td colSpan="3" style={{ textAlign: "center" }}>
-              {loading ? "Looking for transactions" : "No data found"}
+              {loading ? <Loading /> : "No Data Found in DataBase"}
             </td>
           </tr>
         )}

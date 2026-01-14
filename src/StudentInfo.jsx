@@ -1,4 +1,5 @@
 import "./StudentInfo.css";
+import Loading from "./loading";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -63,7 +64,7 @@ export default function StudentInfo() {
         <h1>Student's Info</h1>
 
         {loading ? (
-          <p>Loading...</p>
+          <Loading />
         ) : (
           <table>
             <thead>
