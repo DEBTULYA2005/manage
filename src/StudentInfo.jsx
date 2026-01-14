@@ -153,7 +153,7 @@ export default function StudentInfo() {
 
             <div className="modal-actions">
               <button className="save-btn" onClick={handleSave}>
-                Save
+                {loading ? "Saving..." : "Save"}
               </button>
               <button
                 className="cancel-btn"
