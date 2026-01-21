@@ -16,20 +16,20 @@ export default function Account(){
     const [code, setCode] = useState("");
 
 
-    const handleSendCode = () => {
-        // API call to send code to email
-        setOpen(true);
-    };
+    // const handleSendCode = () => {
+    //     // API call to send code to email
+    //     setOpen(true);
+    // };
 
 
-    const handleReset = () => {
-        // API call to verify/reset code
-        setOpen(false);
-        setCode("");
-    };
+    // const handleReset = () => {
+    //     // API call to verify/reset code
+    //     setOpen(false);
+    //     setCode("");
+    // };
 
     return(
-        <div className="income-page">
+        <div className="Account-page">
             <button className="back-btn" onClick={() => navigate(-1)}>
                 ← Back
             </button><br></br>
