@@ -5,6 +5,7 @@ import StudentInfo from "./StudentInfo";
 import Income from "./Income";
 import Footer from "./Footer";
 import "./App.css";
+import "./Account";
 
 function App() {
   return (
