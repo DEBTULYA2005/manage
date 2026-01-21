@@ -29,9 +29,10 @@ export default function Dashboard() {
         <Link to="/" className="logo active">Debtulya</Link>
 
         <div className="nav-center">
-          <Link to="/income">Amount</Link>
+          <Link to="/income">Income</Link>
           <Link to="/timetable">Time Table</Link>
           <Link to="/students">Student Info</Link>
+          <Link to="/Account">Account</Link>
         </div>
       </nav>
 

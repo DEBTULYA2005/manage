@@ -15,6 +15,7 @@ function App() {
           <Route path="/timetable" element={<TimeTable />} />
           <Route path="/students" element={<StudentInfo />} />
           <Route path="/income" element={<Income />} />
+          <Route path="/Account" element={<Account />} />
         </Routes>
       </div>
 
