@@ -20,7 +20,7 @@ export default function AddPaymentModal({ close, refresh }) {
     setError("");
 
     try {
-      const res = await fetch("https://freemanage.onrender.com/api/income/", {
+      const res = await fetch("https://freemanage-1.onrender.com/api/income/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...form, amount: Number(form.amount) }),

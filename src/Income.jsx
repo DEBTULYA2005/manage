@@ -23,7 +23,7 @@ export default function Income() {
 
   const fetchSummary = async () => {
   try {
-    const res = await fetch("https://freemanage.onrender.com/api/income/");
+    const res = await fetch("https://freemanage-1.onrender.com/api/income/");
     if (!res.ok) {
       throw new Error("HTTP error " + res.status);
     }
@@ -38,7 +38,7 @@ export default function Income() {
 
   const fetchPayments = async () => {
   try {
-    const res = await fetch("https://freemanage.onrender.com/api/income/");
+    const res = await fetch("https://freemanage-1.onrender.com/api/income/");
     if (!res.ok) {
       throw new Error("HTTP error " + res.status);
     }

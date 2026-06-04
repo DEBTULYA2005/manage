@@ -15,7 +15,7 @@ export default function TimeTable() {
   // Fetch timetable from Django API
   useEffect(() => {
     axios
-      .get("https://freemanage.onrender.com/api/timetable/")
+      .get("https://freemanage-1.onrender.com/api/timetable/")
       .then((res) => {
         setTimetable(res.data);
         setLoading(false);

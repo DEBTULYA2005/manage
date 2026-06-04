@@ -5,7 +5,7 @@ export default function CalculationModal({ close }) {
   const [students, setStudents] = useState([]);
 
   useEffect(() => {
-    fetch("https://freemanage.onrender.com/api/students/")
+    fetch("https://freemanage-1.onrender.com/api/students/")
       .then(res => res.json())
       .then(data => setStudents(data));
   }, []);
