@@ -61,8 +61,36 @@ tbody tr:hover td {
   background-color: #0056b3;
 }
 
-/* ===== POPUP OVERLAY ===== */
+/* Edit button */
+.edit-btn {
+  background-color: #f0a500;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
 
+.edit-btn:hover {
+  background-color: #d4900a;
+}
+
+/* Delete button */
+.delete-btn {
+  background-color: #e53935;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c62828;
+}
+
+/* ===== POPUP OVERLAY ===== */
 .modal-overlay {
   position: fixed;
   top: 0;
