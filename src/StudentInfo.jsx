@@ -134,10 +134,10 @@ export default function StudentInfo() {
                   <td>{student.fees}</td>
                   <td>
                     <button className="edit-btn" onClick={() => handleEdit(student)}>
-                      ✏️ Update
+                      ✏️
                     </button>
                     <button className="delete-btn" onClick={() => handleDelete(student.id)}>
-                      🗑️ Delete
+                      🗑️
                     </button>
                   </td>
                 </tr>
